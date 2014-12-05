@@ -12,7 +12,13 @@ INSTRUÇÕES
 
 -Instalação
 
-Ex: plugman install --platform android --project /users/unasus/desktop/gabriel/unasus/una-sus-store-app/appunasusstore/unasusstore/platforms/android --plugin /users/unasus/desktop/gabriel/unasus/usablespacecordovaplugin/usablespace
+Com o plugman:
+    
+    Exemplo: plugman install --platform android --project /users/unasus/desktop/gabriel/unasus/una-sus-store-app/appunasusstore/unasusstore/platforms/android --plugin /users/unasus/desktop/gabriel/unasus/usablespacecordovaplugin/usablespace
+
+Com o Cordova CLI
+    
+    cordova plugin add org.unasus.usablespace
 
 -Usando
 
