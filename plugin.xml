@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="org.unasus.usablespace" version="1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<engines>
+	    <engine name="cordova" version=">=3.3.0" />
+	</engines>
+
+	<name>UsableSpace</name>
+	<description>Show available primary memory space in bytes </description>
+
+	<js-module name="UsableSpace" src="www/UsableSpace.js">
+		<clobbers target="UsableSpace" />
+	</js-module>
+
+	<platform name="android">
+		<config-file parent="/widget" target="res/xml/config.xml">
+			<feature name="UsableSpace">
+				<param name="android-package" value="org.unasus.usablespace" />
+			</feature>
+		</config-file>
+
+		<source-file src="src/android/UsableSpace.java" target-dir="src/org/unasus/usablespace" />
+
+		<source-file src="src/android/ExternalStorage.java" target-dir="src/org/unasus/usablespace" />
+	</platform>
+
+	<platform name="ios">
+		<config-file parent="/widget" target="config.xml">
+			<feature name="UsableSpace">
+				<param name="ios-package" value="CDVUsableSpace" />
+			</feature>
+		</config-file>
+		<header-file src="src/ios/CDVUsableSpace.h" />
+		<source-file src="src/ios/CDVUsableSpace.m" />
+	</platform>
+</plugin>
