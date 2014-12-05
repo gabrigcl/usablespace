@@ -31,3 +31,8 @@ Com o Cordova CLI
     ); 
 ```
 
+Autores
+    
+    Gabriel Castro (gabri.gcl@gmail.com)
+    Luís Paulo Moraes (l7moraes@gmail.com)
+
