@@ -22,8 +22,12 @@ Com o Cordova CLI
 
 -Usando
 
-window.UsableSpace.getUsableSpace(function(sucesso){
-console.log(“Espaço livre: “+sucesso+” bytes”);
-}, function(erro){
-console.log(“Houve um problema:  “+erro);
-}); 
+```js
+    window.UsableSpace.getUsableSpace(function(sucesso){
+            console.log(“Espaço livre: “+sucesso+” bytes”);
+        }, function(erro){
+            console.log(“Houve um problema:  “+erro);
+        }
+    ); 
+```
+
